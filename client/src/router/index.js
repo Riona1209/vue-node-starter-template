@@ -16,31 +16,23 @@ const routes = [
     component: LoginHome,
     meta: {
       showNavbar: false,
+      showFooter: false,
     },
   },
   {
     path: "/dashboard",
     name: "UserDashboard",
     component: UserDashboardVue,
-    meta: {
-      showNavbar: true,
-    },
   },
   {
     path: "/admindashboard",
     name: "AdminDashboard",
     component: AdminDashboardVue,
-    meta: {
-      showNavbar: true,
-    },
   },
   {
     path: "/changepassword",
     name: "ChangePassword",
     component: ChangePasswordVue,
-    meta: {
-      showNavbar: true,
-    },
   },
 ];
 const router = new VueRouter({

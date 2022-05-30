@@ -11,6 +11,10 @@ const templateData = {
     changePasswordIcon: "mdi-lock-reset",
     debugOnText: "Debug On",
   },
+  footerComp: {
+    copyrightPre: "Copyright © ",
+    copyrightSuff: "Yash Sharma",
+  },
   loginHome: {
     loginText: "LOGIN",
     regTest: "REGISTER",

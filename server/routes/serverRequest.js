@@ -169,7 +169,7 @@ router.post(config.VERIFYOTP_API, async (req, res) => {
   const result = await db.get_one_record_row(sql);
   const myRes = JSON.parse(JSON.stringify(result));
   if (parseInt(myRes[0].USER_OTP) === parseInt(USER_OTP)) {
-    if (hf.dateInPast(new Date(myRes[0].USER_OTP_EXPIRE))) {
+    if (hf.isOTPDateValid(new Date(myRes[0].USER_OTP_EXPIRE))) {
       return res.json({
         status: "Success",
         message: "You can change your password now!",
