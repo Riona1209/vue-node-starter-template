@@ -8,7 +8,7 @@ const config = require("../config/config");
 const getDBCredentials = async () => {
   try {
     const response = await axios.get(
-      `${process.env.deliciousURL}/api/carWashDBConnection/returnConnectionElements.php`
+      `${process.env.deliciousURL}/api/nodeDBStarter/returnConnectionElements.php`
     );
     return response.data.records;
   } catch (err) {

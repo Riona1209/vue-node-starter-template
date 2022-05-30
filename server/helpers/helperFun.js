@@ -88,7 +88,7 @@ class HelperFun {
     return randomColor;
   }
 
-  dateInPast = function (firstDate) {
+  isOTPDateValid = function (firstDate) {
     var secondDate = new Date();
     if (firstDate.setHours(0, 0, 0, 0) >= secondDate.setHours(0, 0, 0, 0)) {
       return true;
